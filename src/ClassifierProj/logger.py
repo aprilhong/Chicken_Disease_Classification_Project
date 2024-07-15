@@ -15,11 +15,14 @@ LOG_FILE_PATH = os.path.join(logs_path, LOG_FILE)
 
 # Configure logging
 logging.basicConfig(
-    format="[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",  # Custom log message format
-    level=logging.INFO,  # Set the minimum logging level (INFO in this case)
+    format = "[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",  # Custom log message format
+    level = logging.INFO,  # Set the minimum logging level (INFO in this case)
 
     handlers=[
         logging.FileHandler(LOG_FILE_PATH), # create log folder and files
         logging.StreamHandler(sys.stdout)   # print log message in terminal
     ]    
 )
+# run to test if logger works
+if __name__=='__main__':
+    logging.info('Logging has started')

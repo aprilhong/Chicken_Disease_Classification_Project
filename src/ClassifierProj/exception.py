@@ -1,5 +1,5 @@
 import sys
-from ClassifierProj.logger import logging
+from ClassifierProj import logger
 
 def error_message_detail(error,error_detail:sys):
     """
