@@ -5,11 +5,12 @@ import logging
 # For this configuration, whenever you use a logging function (like logging.info()) with a severity level of INFO or higher, it will be recorded with the timestamp and your message within square brackets. 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = "ClassiferProj"
+project_name = "ClassifierProj"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
+    f"src/{project_name}/logger.py",
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/config/__init__.py",

@@ -11,7 +11,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "Chicken_Disease_Classification_Project" #folder name from github
 AUTHOR_USER_NAME = "aprilhong"
-SRC_REPO = "ClassiferProj"
+SRC_REPO = "ClassifierProj"
 AUTHOR_EMAIL = "aprilhong62@gmail.com"
 
 
@@ -32,10 +32,12 @@ setup(
 )
 
 
+
 Hypen_e_dot='-e .'
 def get_requirements(file_path:str)->List[str]:
     '''
-    this function will return the list of requirements to install
+    this function will remove the '-e .' from requirements.txt and 
+    return the list of requirements to install
     '''
     requirements=[]
     with open(file_path) as file_obj:
